@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuñez Fotografía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #000, #1a1a1a);
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff3c68;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?photography') no-repeat center center/cover;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 10px #000;
+    }
+    .hero h2 {
+      font-size: 4rem;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff3c68;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #111;
+      padding: 40px;
+      text-align: center;
+      color: #ccc;
+    }
+    .contact {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+    .contact strong {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nuñez Fotografía</h1>
+  </header>
+  <nav>
+    <a href="#galeria">Galería</a>
+    <a href="#acerca">Acerca de</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Capturando momentos únicos</h2>
+  </section>
+
+  <section id="galeria" class="section">
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="/mnt/data/images (2) (8).jpeg" alt="Foto 1" />
+      <img src="/mnt/data/images (2) (9).jpeg" alt="Foto 2" />
+      <img src="/mnt/data/images (2) (10).jpeg" alt="Foto 3" />
+      <img src="/mnt/data/images (2) (11).jpeg" alt="Foto 4" />
+      <img src="/mnt/data/images (2) (12).jpeg" alt="Foto 5" />
+      <img src="/mnt/data/images (2) (13).jpeg" alt="Foto 6" />
+    </div>
+  </section>
+
+  <section id="acerca" class="section">
+    <h3>Acerca de mí</h3>
+    <p>Soy Nallely Nuñez, fotógrafa apasionada por capturar la esencia de cada momento. Me especializo en retratos, fotografía urbana y eventos. Mi objetivo es contar historias visuales que dejen una impresión duradera.</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h3>Contacto</h3>
+    <div class="contact">
+      <p><strong>Nombre:</strong> Nuñez Andres Nallely Del Carmen</p>
+      <p><strong>Email:</strong> <a href="mailto:nallelyandres320@gmail.com">nallelyandres320@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nuñez Fotografía. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
